@@ -1,0 +1,47 @@
+/* #title {
+  color: red;
+}
+.sub-title {
+  color: green;
+}
+h3 {
+  color: blueviolet;
+} */
+/* .box .title {
+  color: green;
+}
+.wrapper .title {
+  color: blueviolet;
+}
+.menu > li {
+  color: green;
+} */
+/* div.box.content h2 {
+  color: red;
+}
+section.content#box h2 {
+  color: green;
+} */
+/* p ~ h2 {
+  color: blue;
+}
+p ~ div h2 {
+  color: green;
+} */
+/* p + h2 + h2 {
+  color: blue;
+} */
+/* h2 + h2 {
+  color: red;
+} */
+p + h2,
+p + h2 + h2 {
+  color: red;
+}
+/*
+pseudo class
+*/
+.todos input:checked + span {
+  /* color: red; */
+  text-decoration: line-through;
+}

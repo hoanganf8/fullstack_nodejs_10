@@ -17,3 +17,23 @@ f. tenmien/duong-dan
 
 Relative path
 Absolute path
+
+## Request - Response
+
+1. HTTP Request
+
+- URL
+- Method: GET, POST, PUT, PATCH, DELETE,...
+- Header
+- Body / Payload
+
+2. HTTP RESPONSE
+
+- Status
+- Header
+- Body
+
+Lưu ý:
+
+- HTTP là giao thức web giúp giao tiếp giữa Client với Server
+- HTTP là giao thức không liên tục
