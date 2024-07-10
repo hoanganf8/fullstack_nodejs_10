@@ -1,0 +1,31 @@
+/*
+Attribute Selector
+1. [tenthuoctinh] ==> Chọn tất cả thẻ html có thuộc tính
+
+2. [tenthuoctinh="giatri"] ==> Chọn tất cả thẻ html có thuộc tính = giá trị
+
+3. [tenthuoctinh^="giatri"] ==> Chọn tất cả thẻ html có giá trị thuộc tính bắt đầu bằng giatri
+
+4. [tenthuoctinh$="giatri"] ==> Chọn tất cả thẻ html có giá trị thuộc tính kết thúc bằng giatri
+
+5. [tenthuoctinh*="giatri"] ==> Chọn tất cả thẻ html có thuộc tính chứa giá trị
+
+6. [tenthuoctinh~="giatri"] ==> Chọn tất cả thẻ html có thuộc tính chứa giatri là 1 từ
+
+* ==> Đại diện cho tất cả thẻ html
+
+*/
+/* ul li a[title~="báo"] {
+  color: red;
+} */
+/* [class^="title-"] {
+  color: red;
+} */
+
+/* * {
+  color: red;
+} */
+
+/* .content > * {
+  border: 1px solid red;
+} */

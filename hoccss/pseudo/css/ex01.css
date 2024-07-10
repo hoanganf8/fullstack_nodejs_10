@@ -1,0 +1,59 @@
+/*
+Cú pháp phần tử giả
+selector::tenphantu {
+    Code CSS
+}
+- before
+- after
+- selection
+- placeholder 
+- first-line
+- first-letter
+*/
+body {
+  height: 2000px;
+}
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+h1::after {
+  content: ">";
+}
+p {
+  color: blueviolet;
+}
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  color: green;
+}
+p::selection {
+  background: black;
+  color: yellow;
+}
+input::placeholder {
+  color: red;
+  font-style: italic;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: green;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+.color-red:checked ~ .nav label:nth-child(1),
+.color-red:checked ~ p {
+  color: red;
+}
+.color-green:checked ~ .nav label:nth-child(2),
+.color-green:checked ~ p {
+  color: green;
+}
+.color-blue:checked ~ .nav label:nth-child(3),
+.color-blue:checked ~ p {
+  color: blue;
+}

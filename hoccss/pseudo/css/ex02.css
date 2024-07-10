@@ -1,0 +1,62 @@
+/*
+Lớp giả (Trạng thái)
+Cú pháp: 
+selector:tenlopgia {
+
+}
+- hover
+- active
+- focus --> Chỉ có tác dụng với form
+- checked
+- disabled
+- not
+- first-child
+- last-child
+- first-of-type
+- last-of-type
+- nth-child
+- nth-of-type
+- valid
+*/
+/* h1:hover {
+  color: red;
+}
+h1:active {
+  color: green;
+}
+h1:focus {
+  color: blue;
+} */
+/* input:focus {
+  background: yellow;
+}
+input:focus::placeholder {
+  color: red;
+} */
+/* button:focus {
+  background: blueviolet;
+}
+input:disabled::placeholder {
+  color: blueviolet;
+} */
+/* .list-item li:not(.item):not(.first) {
+  color: red;
+} */
+/* .list-item li:first-child {
+  color: red;
+} */
+.list-item li:first-of-type {
+  color: red;
+}
+/* .list-item li:last-child {
+  color: green;
+} */
+.list-item li:last-of-type {
+  color: green;
+}
+.content h2:nth-child(1) {
+  color: red;
+}
+.name:valid {
+  background: yellow;
+}
