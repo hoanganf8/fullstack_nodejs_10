@@ -1,0 +1,29 @@
+/*
+Background ==> Thay đổi nền của thành phần html
+- background-color
+- background-image
+- background-repeat
+- background-position
+- background-size: cover | contain
+- background-attachment
+- background: Gộp tất cả những thuộc tính trên
+*/
+body {
+  height: 100vh;
+  /* background-color: rgb(255, 149, 0);
+  background-image: url("https://fastly.picsum.photos/id/769/1000/1000.jpg?hmac=BYvHPdPEy5-BeXSoyo0vfxUQ69MWtOTopFlqsqkWiQg");
+  background-repeat: no-repeat; */
+  /* background-position: center 100%; */
+  /* background-size: 100% 100%; */
+}
+/* p {
+  background-color: rgba(0, 128, 0, 0.532);
+} */
+
+.box {
+  height: 300px;
+  background-color: red;
+  background-image: url("https://fastly.picsum.photos/id/775/1000/1000.jpg?hmac=b8LlpJla8GMBfY54rp_qMlRSBCbZrRDQkD3NyUxaEyc");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

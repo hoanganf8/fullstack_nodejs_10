@@ -1,0 +1,59 @@
+/*
+Thuộc tính font-family: Thay đổi font chữ của văn bản
+
+Họ font: 
+sans-serif ==> họ font không chân
+serif ==> họ font có chân
+
+Thuộc tính letter-spacing: Thay đổi khoảng cách giữa các ký tự
+
+Thuộc tính word-spacing: Thay đổi khoảng cách giữa các từ
+
+Thuộc tính text-transform: Thay đổi kiểu hiển thị của chữ (Thường, hoa)
+- uppercase
+- lowercase
+- capitalize
+- none
+
+Thuộc tính text-decoration: Thay đổi đường kẻ trong văn bản
+- none
+- underline
+- overline
+- line-through
+
+Thuộc tính text-align: Thay đổi vị trí của văn bản theo chiều ngang
+- left
+- center
+- right
+- justify
+
+Thuộc tính text-align-last: Căn chỉnh vị trí văn bản ở dòng cuối cùng trong đoạn văn
+*/
+@import url("./fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swaps");
+
+body {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  /* text-transform: capitalize;
+  text-decoration: underline overline line-through; */
+  /* text-align: justify;
+  text-align-last: center; */
+}
+.content {
+  border: 1px solid red;
+  width: 80%;
+  text-align: left;
+  text-align-last: left;
+  /* word-wrap: break-word; */
+  word-break: break-all;
+}
+.btn-wrap {
+  text-align: center;
+}
+.image {
+  text-align: center;
+}

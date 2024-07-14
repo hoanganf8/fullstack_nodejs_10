@@ -1,0 +1,26 @@
+/*
+color: tenmau|mamau ==> Thay đổi màu văn bản
+Màu sắc: Độ trong suốt của màu (Color Opacity)
+transparent: Màu trong suốt
+Giá trị kế thừa (Tồn tại ở mọi thuộc tính)
+- initial --> Giá trị mặc định của trình duyệt
+- inherit --> Kế thừa giá trị của thành phần cha
+Thuộc tính color là thuộc tính kế thừa
+Giá trị currentColor ==> Lấy giá trị thuộc tính color hiện tại
+*/
+/* body {
+  color: red;
+} */
+/* .text-1 {
+  color: rgb(183, 10, 241);
+}
+.text-1:hover {
+  color: initial;
+} */
+/* .text-2 {
+  color: transparent;
+} */
+.text-2 {
+  color: rgb(244, 2, 228);
+  border: 1px solid currentColor;
+}

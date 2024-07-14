@@ -1,0 +1,34 @@
+/*
+Đơn vị trong CSS
+1. Tuyệt đối
+- pixel (px)
+- point (pt). 1pt = 1.3333333px
+2. Tương đối
+- em --> Tỷ lệ với thành phần cha
+- rem --> Tỷ lệ với trình duyệt
+- % --> Tỷ lệ với thành phần cha
+- vh --> Tỷ lệ với chiều cao viewport
+- vw --> Tỷ lệ với chiều rộng của viewport
+
+Thuộc tính font-size: Thay đổi cỡ chữ của văn bản
+Cú pháp: font-size: value+unit
+
+Thuộc tính line-height: Thay đổi chiều cao của dòng văn bản (Dãn dòng)
+Cú pháp: line-height: value (Tỷ lệ với font-size)
+*/
+/* html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+}
+.box {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.2em;
+} */
+/* .box {
+  font-size: 10px;
+  line-height: 1.3;
+} */
