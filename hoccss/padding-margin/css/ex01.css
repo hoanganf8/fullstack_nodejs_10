@@ -1,0 +1,39 @@
+/*
+Thuộc tính padding: Tạo khoảng cách giữa border và nội dung trong 1 phần tử
+- padding: value
+- padding: value1 value2
+- padding: value1 value2 value3
+- padding: value1 value2 value3 value4
+- padding-top: value
+- padding-left: value
+- padding-right: value
+- padding-bottom: value
+
+Lưu ý: 
+- Nếu dùng đơn vị % ==> Tỷ lệ theo width thẻ cha
+- Nếu phần tử là inline ==> Không padding-top và bottom được
+
+*/
+/* .box {
+  border: 5px solid red;
+  padding-top: 50%;
+} */
+
+/* .box {
+  background: yellowgreen;
+  width: 400px;
+  aspect-ratio: 4 / 3;
+} */
+/* .box .box-inner {
+  padding-top: 56.25%;
+} */
+p {
+  border: 1px solid red;
+  margin-bottom: 0;
+}
+.readmore {
+  border: 1px solid red;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+}

@@ -1,0 +1,20 @@
+/*
+background-attachment: scroll | fixed
+background: color image repeat position / size attachment
+*/
+body {
+  height: 2000px;
+  background: fixed #000
+    url("https://fastly.picsum.photos/id/577/536/354.jpg?hmac=MGf_fraImy4RGbmwigVVeUJNDtQ2Oul2rXlEJDPAjKE")
+    no-repeat 10px 0 / cover;
+}
+section {
+  padding: 30px 0;
+}
+.banner {
+  height: 200px;
+  /* background-image: url("https://fastly.picsum.photos/id/577/536/354.jpg?hmac=MGf_fraImy4RGbmwigVVeUJNDtQ2Oul2rXlEJDPAjKE");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}

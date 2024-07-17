@@ -1,0 +1,27 @@
+/*
+cursor: 
+- default
+- pointer
+- move
+- grab
+*/
+.box {
+  width: 0;
+  height: 0;
+  border: 50px solid;
+  border-color: red green blue yellow;
+}
+
+.btn {
+  color: green;
+  background: none;
+  border: 1px solid currentColor;
+  width: 100px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover {
+  background: green;
+  color: #fff;
+}

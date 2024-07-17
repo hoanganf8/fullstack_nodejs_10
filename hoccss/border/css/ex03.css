@@ -1,0 +1,27 @@
+/*
+Thuộc tính border-radius ==> Bo góc
+Nếu là hình vuông ==> border-radius: 50% trở lên ==> Chuyển thành hình tròn
+*/
+.box {
+  border: 5px solid red;
+  /* border-radius: 10px 20px 30px 40px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+}
+.btn {
+  background: green;
+  color: #fff;
+  border: 0;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 99px;
+}
+.btn-sm {
+  height: 25px;
+}
+.btn-lg {
+  height: 35px;
+}
