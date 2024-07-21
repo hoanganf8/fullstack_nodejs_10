@@ -1,0 +1,40 @@
+/*
+Thuộc tính overflow: Xử lý nội dung bị tràn
+- visible --> Giữ nguyên nội dung bị tràn
+- hidden --> Ẩn nội dung bị tràn
+- scroll --> Ẩn nội dung bị tràn nhưng tạo thanh cuộn để người xem được nội dung ẩn
+- auto --> Ẩn nội dung bị tràn nhưng tạo thanh cuộn để người xem được nội dung ẩn
+
+Thuộc tính overflow-x: Xử lý tràn nội dung theo trục X
+Thuộc tính overflow-y: Xử lý tràn nội dung theo trục Y
+
+List Style --> Định dạng thẻ chèn danh sách (ul li, ol li)
+- list-style-type: Kiểu danh sách
+- list-style-position: Vị trí của kiểu danh sách (outside, inside)
+- list-style-image: Sử dụng để thay cho biểu tượng của list --> Nên thay thế bằng background kết hợp với before, after
+- list-style: type position image
+*/
+/* .box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.box p {
+  width: 300px;
+} */
+
+/* * {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  border: 1px solid red;
+  width: 200px;
+  margin: 30px auto;
+}
+.menu {
+  list-style-type: square;
+  list-style-position: inside;
+} */

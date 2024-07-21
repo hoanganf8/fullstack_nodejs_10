@@ -1,0 +1,59 @@
+/*
+width: Thiết lập chiều rộng
+height: Thiết lập chiều cao
+min-width: Thiết lập chiều rộng tối thiểu
+max-width: Thiết lập chiều rộng tối đa
+min-height: Thiết lập chiều cao tối thiểu
+max-height: Thiết lập chiều cao tối đa
+
+Đơn vị: px, %, vh, vw
+
+Lưu ý: Chỉ áp dụng với thẻ block, inline-block
+
+Trong thẻ inline có 2 loại: 
+- inline replace --> Thẻ inline bị thay thế (Thay thế thành inline-block)
+- inline non-replace 
+
+Thuộc tính width chạy từ min-width đến max-width
+Thuộc tính height chạy từ min-height đến max-height
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+/* .wrapper {
+  height: 400px;
+  background: yellow;
+}
+.box {
+  width: 200px;
+  height: 100vh;
+  background: green;
+} */
+/* a {
+  background: red;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+} */
+/* img {
+  width: 200px;
+} */
+.box {
+  width: 400px;
+  height: 400px;
+  background: green;
+}
+.content {
+  width: 200px;
+  min-width: 300px;
+  max-width: 100%;
+  height: 300px;
+  background: yellow;
+}
+img {
+  max-width: 100%;
+}
