@@ -1,0 +1,101 @@
+/*
+Các thuộc tính trong nhóm flex container
+- display: flex|inline-flex --> Kích hoạt flexbox
+- flex-direction: Chọn hướng cho trục chính
++ row --> Mặc định
++ row-reverse --> Nằm ngang đảo ngược
++ column --> Nằm dọc
++ column-reverse --> Nằm dọc đảo ngược
+- justify-content: Căn chỉnh các item theo hướng song song với trục chính
++ flex-start
++ flex-end
++ center
++ space-between
++ space-around
++ space-evenly
++ start
++ end
+- align-items: Căn chỉnh các item theo hướng song song với trục cross (Vuông góc với trục chính)
++ flex-start
++ flex-end
++ center
++ baseline
++ stretch --> Mặc định
+- flex-wrap --> wrap các item
++ nowrap
++ wrap
++ wrap-reverse
+- align-content --> Điều chỉnh các hàng (cột) theo hướng vuông góc với trục chính (Chỉ áp dụng khi có nhiều hàng hoặc cột)
++ stretch
++ flex-start
++ flex-end
++ center
++ space-between
++ space-around
++ space-evenly
+- gap: Căn chỉnh khoảng cách giữa các item
+- row-gap: Căn chỉnh khoảng cách theo hàng
+- column-gap: Căn chỉnh khoảng cách theo cột
+
+Các thuộc tính trong nhóm flex-item
+- flex-grow: number ==> Lấp đầy khoảng cách còn trống của container
+- flex-shrink: number ==> Tự động co lại khi kích thước các item vượt quá kích thước của container
+- flex-basis: Thiết lập kích thước ban đầu cho item
+Lưu ý: Bị chặn bởi min-width, max-width, min-height, max-height
+- flex: grow shrink basis
+- order: Sắp xếp các item theo thứ tự mong muốn
+- align-self: Căn chỉnh chính theo hướng vuông góc với trục chính (Giống align-items)
++ flex-start
++ flex-end
++ center
++ baseline
++ stretch
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch; */
+  /* gap: 10px 20px; */
+}
+.item {
+  background: green;
+  color: #fff;
+  border: 1px solid #fff;
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  /* flex-basis: 30px; */
+  flex: 0 1 100px;
+}
+/* .item:nth-child(1) {
+  order: 2;
+}
+.item:nth-child(2) {
+  order: 3;
+}
+.item:nth-child(3) {
+  order: 5;
+}
+.item:nth-child(4) {
+  order: 1;
+}
+.item:nth-child(5) {
+  order: 4;
+} */
+.item:nth-child(5) {
+  /* align-self: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
