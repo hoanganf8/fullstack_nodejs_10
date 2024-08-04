@@ -1,0 +1,18 @@
+/*
+Thuộc tính display: Thay đổi chế độ hiển thị của thẻ html
+- none ==> Ẩn (Mất không gian)
+- block ==> Chuyển về dạng thẻ block
+- inline ==> Chuyển về dạng thẻ inline
+- inline-block ==> Kết hợp giữa inline và block
+
+Thuộc tính visibility ==> Ẩn / Hiện
+- visible --> Hiện
+- hidden --> Ẩn
+
+Thuộc tính opacity ==> Làm trong suốt các phần tử
+*/
+.box {
+  opacity: 0;
+  /* visibility: hidden; */
+  background: green;
+}

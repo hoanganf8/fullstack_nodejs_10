@@ -1,0 +1,45 @@
+.container--circle {
+  width: 600px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: #ddd;
+  border-radius: 50%;
+  position: relative;
+  animation: circle 1s linear infinite;
+  z-index: 2;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border: 10px solid transparent;
+  border-left: 10px solid yellow;
+  border-radius: 50%;
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.overlay {
+  background-color: rgba(128, 128, 128, 0.67);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  transition-property: visibility, opacity;
+}
+.nav_menu {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  width: 250px;
+  height: 100vh;
+  padding: 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.nav_menu .close {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+#open:checked ~ .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+#open:checked ~ .nav_menu {
+  transform: translateX(0);
+}
