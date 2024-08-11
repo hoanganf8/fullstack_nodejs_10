@@ -1,0 +1,29 @@
+/*
+Biến trong CSS
+Lưu các giá trị của các thuộc tính nhằm mục đích tái sử dụng
+Có 2 loại: 
+- Biến toàn cục (Global Variable)
+- Biến cục bộ (Local Variable)
+*/
+:root {
+  --primary-color: green;
+  --secondary-color: red;
+  --text-color: #333;
+  --font-size: 1.6rem;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+h2 {
+  color: var(--secondary-color);
+}
+.content {
+  --heading-color: blueviolet;
+  --secondary-color: blue;
+  border: 3px solid var(--secondary-color);
+}
+
+.content h3 {
+  color: var(--heading-color);
+}

@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  padding: 15px 0;
+}
+.header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu {
+  margin-left: auto;
+}
+.header .menu ul {
+  display: flex;
+  gap: 20px;
+}
+.header .menu ul li a {
+  font-weight: 500;
+}
+.header .contact {
+  padding-left: 30px;
+}
+.header .contact .btn {
+  display: inline-block;
+  background: #75b7eb;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 99px;
+}
+.header .menu-toggle {
+  font-size: 2.5rem;
+  display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .header .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #333;
+    width: 300px;
+    padding: 20px;
+    translate: -100%;
+    transition: 0.4s ease;
+    transition-property: translate;
+  }
+  .header .overlay {
+    position: fixed;
+    inset: 0;
+    background: #0000009f;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+    transition-property: opacity, visibility;
+  }
+  .header input[type="checkbox"]:checked ~ .menu {
+    translate: 0;
+  }
+  .header input[type="checkbox"]:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .menu ul {
+    display: block;
+  }
+  .header .menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 5px 0;
+  }
+  .header .menu-toggle {
+    display: block;
+  }
+  .header .contact {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header .contact {
+    display: none;
+  }
+}
