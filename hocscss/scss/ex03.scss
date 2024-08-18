@@ -1,0 +1,72 @@
+//Vòng lặp: Cú pháp cho phép 1 đoạn chương trình lặp đi lặp lại theo số lần nhất định
+
+// Vòng lặp @for
+// $length: 5;
+// @for $i from 1 to $length {
+//   .column-#{$i} {
+//     $width: $i * 50%;
+//     // @if $i == $length {
+//     //   $width: 0;
+//     // }
+//     width: $width;
+//   }
+// }
+//Bài tập: Selector cuối cùng để width: 0
+
+//Vòng lặp @each
+// $sizes: 20px 40px 60px 80px; //List
+// $length: length($sizes); //Trả về số lượng phần tử của biến $sizes
+// $count: 0;
+// @each $size in $sizes {
+//   $count: $count + 1;
+//   .column-#{$size} {
+//     @if $count == $length {
+//       font-size: 0;
+//     } @else {
+//       font-size: $size;
+//     }
+//   }
+// }
+//Bài tập: Phần tử cuối để font-size: 0
+
+// $sizes: small 40px normal, medium 60px 600, large 80px 800;
+// @each $name, $size, $weight in $sizes {
+//   .box-#{$name} {
+//     font-size: $size;
+//     font-weight: $weight;
+//   }
+// }
+
+// $breakpoints: sm 576px, md 768px, lg 992px, xl 1200px, xxl 1400px;
+// $displayList: none block inline-block flex inline-flex table list-item;
+// @mixin display($name: "") {
+//   @each $display in $displayList {
+//     $prefix: "";
+//     @if $name != "" {
+//       $prefix: $name + "-";
+//     }
+//     $selector: ".d-" + $prefix + $display;
+//     #{$selector} {
+//       display: $display;
+//     }
+//   }
+// }
+// @include display();
+// @each $name, $value in $breakpoints {
+//   @media screen and (min-width: #{$value}) {
+//     @include display($name);
+//   }
+// }
+
+//Kiểu dữ liệu map
+// $sizes: (
+//   //key: value
+//   small: 40px,
+//   medium: 60px,
+//   large: 80px
+// );
+// @each $name, $value in $sizes {
+//   .box-#{$name} {
+//     font-size: $value;
+//   }
+// }

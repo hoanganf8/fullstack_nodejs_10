@@ -1,0 +1,27 @@
+// @import "partials/reset";
+// @import "partials/header";
+// @import "partials/footer";
+
+//Comment của scss
+/* Comment của css */
+
+//Import với namespace
+//Cú pháp gọi: namespace.tenbien hoặc namespace.tenmixin
+//Lưu ý: Mặc định tên namespace là tên file
+// @use "partials/section01";
+// @use "partials/section02";
+// @use "components/section02" as _section02;
+// .box {
+//   background: section02.$primaryColor;
+//   //   font-size: section02.$_fontSize;
+//   font-size: section01.$fontSize;
+//   //   @include section02._center;
+// }
+// .column {
+//   color: _section02.$primaryColor;
+// }
+
+@use "components/home";
+body {
+  font-family: home.$home-family;
+}

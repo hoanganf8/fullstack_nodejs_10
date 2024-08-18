@@ -1,0 +1,64 @@
+//Biến trong scss
+//Khai báo
+// $tenbien: giatri;
+//Biến trong scss nhận: giá trị thuộc tính, số, true, false, list (Giống mảng trong các ngôn ngữ lập trình khác), chuỗi
+$primaryColor: blue; //Quy tắc đặt tên camelCase
+$headerBackgroundColor: yellow;
+$font: Roboto, sans-serif;
+$size: 10;
+//Biến toàn cục
+:root {
+  --primary-color: green;
+}
+.header {
+  $headerSpace: 30px; //Biến cục bộ
+  $property: font-style;
+  padding: $headerSpace 0;
+  font-family: $font;
+  border: 1px solid #ccc;
+  color: $primaryColor;
+  .header-inner {
+    background: var(--primary-color);
+    font-size: #{$size * 2}px;
+    #{$property}: italic;
+    .menu-toggle {
+      display: block;
+    }
+    .logo {
+      width: 200px;
+      > img {
+        max-width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: red;
+          &::before {
+            color: green;
+          }
+        }
+        &::before {
+          content: "a";
+        }
+        &::after {
+          content: "b";
+        }
+      }
+    }
+  }
+}
+
+//Biến lưu giá trị chuỗi
+$selector: ".column";
+$value: 5;
+//.column-5
+// #{$selector}-#{$value} {
+//   width: 50%;
+// }
+#{$selector + "-" + $value} {
+  width: 50%;
+  font-size: 5 % 2px;
+}
+
+//Toán tử: +, -, *, /, % (Chia lấy dư)

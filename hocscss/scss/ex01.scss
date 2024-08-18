@@ -1,0 +1,82 @@
+//Kế thừa
+// .box {
+//   padding: 30px 0;
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+//placeholder
+// %center-section {
+//   padding: 30px 0;
+//   width: 1200px;
+//   margin: 0 auto;
+//   //   .text {
+//   //     color: #333;
+//   //   }
+// }
+// .posts {
+//   @extend %center-section;
+//   border-bottom: 1px solid red;
+// }
+// .products {
+//   @extend %center-section;
+//   background: gray;
+// }
+
+// .menu {
+//   li {
+//     a {
+//       &.active {
+//         color: red;
+//       }
+//       &:hover {
+//         @extend .active;
+//       }
+//     }
+//   }
+// }
+
+//mixin và include
+// @mixin center-section($width: 1200px, $space: 0) {
+//   width: $width;
+//   margin: $space auto;
+// }
+// .posts {
+//   @include center-section;
+//   background: gray;
+// }
+// .products {
+//   border-bottom: 1px solid red;
+//   @include center-section(1300px, 30px);
+// }
+
+//Responsive
+@mixin small-device {
+  @media screen and (max-width: 767.98px) {
+    .box {
+      color: red;
+    }
+    @content;
+  }
+}
+
+@include small-device {
+  .posts {
+    display: block;
+  }
+}
+
+//Tóm tắt phần kế thừa
+// - @extend selector
+// - @extend placeholder
+// - @minxin ==> Định nghĩa mixin
+// - @include ==> Gọi mixin
+// Trong mixin có 3 trường hợp
+// - Không đối số
+// - Có đối số
+// - Có @content ==> Bổ sung thêm css cho mixin khi gọi
+
+//Toán tử so sánh và luận lý (and, or, not)
+//Câu lệnh rẽ nhánh: @if @else
+//Vòng lặp:
+// - @for throught và @for to
+// - @each

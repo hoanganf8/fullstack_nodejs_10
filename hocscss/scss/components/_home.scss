@@ -1,0 +1,8 @@
+@forward "../partials/variables" as home-*; //Thêm prefix vào forward
+@use "../partials/variables";
+
+.home {
+  background: variables.$primaryColor;
+}
+
+//Ngoài ra: Kỹ thuật @forward còn áp dụng trong trường hợp muốn import cả folder

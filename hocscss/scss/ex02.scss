@@ -1,0 +1,65 @@
+//Toán tử so sánh: >, >=, <, <=, ==, !=
+// Tác dụng: Áp dụng cho các biểu thức so sánh
+//Toán tử luận lý: and, or, not
+// - and: Biểu thức sẽ đúng nếu tất cả các biểu con đều đúng
+// - or: Biểu thức sẽ đúng khi có ít nhất 1 biểu thức đúng
+// - not: Ngược lại
+//Ví dụ: $a >= 5 and $a <= 10
+//Lưu ý: Kết quả của biểu thức so sánh sẽ là true hoặc false
+// $a: 5;
+// $b: $a < 5;
+// .box {
+//   color: $b;
+// }
+
+//Câu lệnh rẽ nhánh
+// - Nếu dieukien1 thì caulenh1
+// - Nếu dieukien2 thì caulenh2
+// - Nếu dieukien3 thì caulenh3
+// - Nếu dieukienn thì caulenhn
+// $number: 5;
+// .box {
+//   @if $number >= 10 {
+//     width: 50%;
+//   } @else {
+//     color: red;
+//   }
+// }
+
+//Ví dụ: Xây dựng mixin position dùng để thể hiện vị trí của 1 phần tử
+// - tl --> Top Left
+// - tr --> Top Right
+// - bl --> Bottom Left
+// - br --> Bottom Right
+@mixin position($type, $x, $y) {
+  position: absolute;
+  @if $type == "tl" {
+    top: $x;
+    left: $y;
+  } @else if $type == "tr" {
+    top: $x;
+    right: $y;
+  } @else if $type == "bl" {
+    bottom: $x;
+    left: $y;
+  } @else if $type == "br" {
+    bottom: $x;
+    right: $y;
+  } @else {
+    inset: 0;
+  }
+}
+$value: 11;
+$status: false;
+.box {
+  //   @if $value % 2 == 0 {
+  //     @include position("tl", 20px, 30px);
+  //   } @else {
+  //     @include position("tr", 20px, 30px);
+  //   }
+  @if $status {
+    @include position("tl", 20px, 30px);
+  } @else {
+    @include position("tr", 20px, 30px);
+  }
+}
